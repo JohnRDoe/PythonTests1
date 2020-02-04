@@ -5,7 +5,7 @@ from SampleTests import *
  
 if __name__=='__main__':
     test_suite = unittest.TestSuite()
-    test_suite.addTest(unittest.makeSuite('SampleTests1', 'SampleTests2'))
+    test_suite.addTest(unittest.makeSuite(SampleTests.SampleTests1, SampleTests.SampleTests2))
     #使用makeSuite方法添加所有的测试方法
     #test_suite.addTest(SampleTests(SampleTests1， SampleTests2))
     # 测试套件中添加测试用例

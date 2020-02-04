@@ -1,6 +1,6 @@
 import unittest
 import xmlrunner
-from SampleTests import *
+import SampleTests
  
 if __name__=='__main__':
     test_suite = unittest.TestSuite()

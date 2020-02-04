@@ -1,7 +1,7 @@
 import unittest
 import xmlrunner
-from SampleTests1 import *
-from SampleTests2 import *
+from SampleTests import *
+# from SampleTests2 import *
  
 if __name__=='__main__':
     test_suite = unittest.TestSuite()

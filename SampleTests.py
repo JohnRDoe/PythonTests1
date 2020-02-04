@@ -18,12 +18,12 @@ class SampleTests1(unittest.TestCase):
         print('Random gibberish')
         self.assertEqual(True, True)
 
-    def test_method5(self):
-        throw ('some exception')
+#     def test_method5(self):
+#         throw ('some exception')
         
-    @unittest.skip("demonstrating skipping")
-    def test_method6(self):
-        pass
+#     @unittest.skip("demonstrating skipping")
+#     def test_method6(self):
+#         pass
 
 class SampleTests2(unittest.TestCase):
     
@@ -42,16 +42,16 @@ class SampleTests2(unittest.TestCase):
         print('Random gibberish')
         self.assertEqual(True, True)
         
-    @unittest.skip("demonstrating skipping")
-    def test_method5(self):
-        pass
+#     @unittest.skip("demonstrating skipping")
+#     def test_method5(self):
+#         pass
 
-    def test_method6(self):
-        throw ('some exception')
+#     def test_method6(self):
+#         throw ('some exception')
 
    
 if __name__ == '__main__':
     test = unittest.main()
     test.addTest(unittest.makeSuite(SampleTests1, SampleTests2))
-    runner = xmlrunner.XMLTestRunner(output='report')#指定报告放的目录
+    runner = xmlrunner.XMLTestRunner(output='')#指定报告放的目录
     runner.run(test)

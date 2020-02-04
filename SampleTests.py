@@ -1,6 +1,6 @@
 import unittest
 
-class Tests1(unittest.TestCase):
+class Test(unittest.TestCase):
     
     def test_method1(self):
         print('Failed test')

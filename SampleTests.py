@@ -53,5 +53,5 @@ class SampleTests2(unittest.TestCase):
 if __name__ == '__main__':
     test = unittest.main()
     test.addTest(unittest.makeSuite(SampleTests1, SampleTests2))
-    runner = xmlrunner.XMLTestRunner(output='')#指定报告放的目录
+    runner = xmlrunner.XMLTestRunner(output='report')#指定报告放的目录
     runner.run(test)

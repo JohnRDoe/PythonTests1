@@ -1,5 +1,5 @@
 import unittest
-
+import xmlrunner
 class Test(unittest.TestCase):
     
     def test_method1(self):
@@ -42,4 +42,7 @@ class Test(unittest.TestCase):
 #     def test_method6(self):
 #         throw ('some exception')
 if __name__ == '__main__':
-    unittest.main()
+    test = unittest.main()
+    test.addTest(unittest.makeSuite(Test))
+    runner = xmlrunner.XMLTestRunner(output='report')#指定报告放的目录
+    runner.run(test)

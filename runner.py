@@ -1,6 +1,6 @@
 import unittest
 import xmlrunner
-from Test import *
+from SampleTests import *
  
 if __name__ == '__main__':
     test = unittest.main()

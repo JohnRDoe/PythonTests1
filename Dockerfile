@@ -67,3 +67,4 @@ ENV JVM_ARGS -Xbootclasspath/p:/opt/alpn-boot-${ALPN_VERSION}.jar
 WORKDIR /jmeter
 # ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 ENTRYPOINT ["jenkins-agent"]
+CMD ["jmeter", "--?"]
